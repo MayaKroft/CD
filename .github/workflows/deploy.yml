@@ -14,7 +14,6 @@ jobs:
          host: ${{secrets.SSH_HOST}} # IP address of the server to ssh into
          key: ${{secrets.SSH_KEY}} # key of the server
          username: ${{secrets.SSH_USERNAME}} # user of the server
-         password: ${{secrets.SSH_PASSWORD}} # password of the user
          passphrase: ${{secrets.SSH_PASSPHRASE}} #passphrase for the key
          
          script: |
