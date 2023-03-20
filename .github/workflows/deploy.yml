@@ -12,9 +12,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      -name: Deploy NodeJS spp
-      -uses: appleboy/sss-action@v.0.1.2
-       with:
+    - uses: appleboy/sss-action@v.0.1.2
+    - name: Deploy NodeJS app
+      with:
          host: ${{secrets.SSH_HOST}} # IP address of the server to ssh into
          key: ${{secrets.SSH_KEY}} # key of the server
          username: ${{secrets.SSH_USERNAME}} # user of the server
