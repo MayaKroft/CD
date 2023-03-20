@@ -14,12 +14,13 @@ jobs:
          host: ${{secrets.SSH_HOST}} # IP address of the server to ssh into
          key: ${{secrets.SSH_KEY}} # key of the server
          username: ${{secrets.SSH_USERNAME}} # user of the server
-         passphrase: ${{secrets.SSH_PASSPHRASE}}
+         password: ${{secrets.SSH_PASSWORD}} # password of the user
+         passphrase: ${{secrets.SSH_PASSPHRASE}} #passphrase for the key
          
          script: |
-           mkdir test
+           sudo mkdir test
            cd test
-           git clone git@github.com:MayaKroft/CD.git
+           sudo git clone git@github.com:MayaKroft/CD.git
            echo 'Deployment successful to digital ocean'
            
   
