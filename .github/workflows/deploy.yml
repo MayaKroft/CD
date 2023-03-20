@@ -8,8 +8,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: appleboy/sss-action@v.0.1.2
     - name: Deploy NodeJS app
+      uses: appleboy/sss-action@v.0.1.2
       with:
          host: ${{secrets.SSH_HOST}} # IP address of the server to ssh into
          key: ${{secrets.SSH_KEY}} # key of the server
