@@ -17,8 +17,7 @@ jobs:
          passphrase: ${{secrets.SSH_PASSPHRASE}} #passphrase for the key
          
          script: |
-           cd ..
-           cd home/gitupdater/CD
+           cd ~/home/gitupdater/CD/
            git pull
            echo 'Deployment successful to digital ocean'
            
