@@ -17,9 +17,9 @@ jobs:
          passphrase: ${{secrets.SSH_PASSPHRASE}} #passphrase for the key
          
          script: |
-           sudo mkdir test
-           cd test
-           sudo git clone git@github.com:MayaKroft/CD.git
+           cd ..
+           cd home/gitupdater/CD
+           git pull
            echo 'Deployment successful to digital ocean'
            
   
