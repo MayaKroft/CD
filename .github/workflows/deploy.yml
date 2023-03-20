@@ -9,6 +9,21 @@ on:
   workflow_dispatch:
 
 jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Deploy NodeJS spp
+      -uses: appleboy/sss-action@v.0.1.2
+       with:
+         host: ${{secrets.SSH_HOST}} # IP address of the server to ssh into
+         key: ${{secrets.SSH_KEY}} # key of the server
+         username: ${{secrets.SSH_USERNAME}} # user of the server
+         
+         script: |
+           mkdir test
+           cs test
+           git clone git@github.com:MayaKroft/CD.git
+           echo 'Deployment successful to digital ocean'
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
