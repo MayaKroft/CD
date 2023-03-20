@@ -21,4 +21,5 @@ jobs:
            cd test
            git clone git@github.com:MayaKroft/CD.git
            echo 'Deployment successful to digital ocean'
+           
   
