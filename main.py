@@ -7,7 +7,7 @@ app = Flask(__name__)
 #Assign function to be called upon the '/' path request
 @app.route("/")
 def index():
-    text= {'h1' : 'Hello, world! This is the CD site' , 'p' : 'This is rendered through a template'}
+    text= {'h1' : 'Hello, world! This is the CD site!' , 'p' : 'This is rendered through a template'}
     return render_template('index.html', title = 'Index', data = text )
     
 
