@@ -4,7 +4,6 @@ blinker==1.4
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
-cloud-init==20.4
 colorama==0.4.3
 command-not-found==0.3
 configobj==5.0.6
@@ -66,7 +65,6 @@ ssh-import-id==5.10
 systemd-python==234
 tomli==2.0.1
 Twisted==18.9.0
-ubuntu-advantage-tools==20.3
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.25.8
