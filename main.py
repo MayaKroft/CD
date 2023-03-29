@@ -15,3 +15,6 @@ def index():
 def cow():
     text= {'h1' : 'MOoooOo' , 'p' : 'MooOOoo'}
     return render_template('main.html', title = 'Moo', data = text )
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
