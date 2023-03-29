@@ -13,7 +13,7 @@ jobs:
       - name: Setup Python 3.9
         uses: actions/setup-python@v3
         with:
-          python-version: '3.9.7'
+          python-version: '3.9.12'
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
