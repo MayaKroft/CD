@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, url_for
 
 #create F app
 app = Flask(__name__)
+app.static_folder = 'static'
 
 #Assign function to be called upon the '/' path request
 @app.route("/")
