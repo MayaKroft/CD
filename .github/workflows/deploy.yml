@@ -34,6 +34,7 @@ jobs:
          script: |
            cd ~/CD/
            git pull
-           echo 'Deployment successful to digital ocean'
+           sudo systemctl restart cd-site.service
+           echo 'Deployment commands run'
            
   
