@@ -32,9 +32,6 @@ jobs:
          username: ${{secrets.SSH_USERNAME}} # user of the server
          
          script: |
-           cd ~/CD/
-           git pull
-           sudo systemctl restart cd-site.service
-           echo 'Deployment commands run'
+          sh updating.sh
            
   
