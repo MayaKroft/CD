@@ -5,7 +5,6 @@ from flask import Flask, render_template, redirect, url_for
 app = Flask(__name__)
 app.static_folder = 'static'
 
-#Assign function to be called upon the '/' path request
 @app.route("/")
 def index():
     text= {'h1' : 'Hello, world! This is the CD site!' , 'p' : 'This is rendered through a template'}
@@ -20,5 +19,7 @@ def cow():
     text= {'h1' : 'MOoooOo' , 'p' : 'MooOOoo'}
     return render_template('base.html', title = 'Moo', data = text )
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+@app.route("/sh-script")
+def sh():
+    text= {'instruction': 'Creare an .sh script','h2': 'creating the script', 'p': 'to create an sh script'}
+    return render_template('instructions.html', title = 'Moo', data = text )

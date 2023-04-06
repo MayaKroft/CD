@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{title}}</title>
+    <title>{% block title %} {% endblock %} -CD</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}", type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>{{data.h1}}</h1>
-        <h1 class="logo">Maya's web app</h1>
-        <strong><nav>
-          <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/cow">Moo</a></li>
-          </ul>
-        </nav></strong>
-        <p>
-            {{data.p}}
-        </p>
-      </div>
+    <header class="top">
+      {% block header %}
+      {% endblock %}
+      <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('index') }}">Moo</a>
+        <a href="{{ url_for('sh') }}">Sh Script</a>
+      </nav>
     </header>
-    <div class="container">
+    <hr>
+    <div class="middle">
       {% block content %}
+      <h1> {{ data.h1 }} </h1>
+      <p> {{ data.text }} </p>
       {% endblock %}
     </div>
+    <hr>
+    <div class="bottom">
+      {% block footer %}
+      <a class="footer-link" href="https://www.linkedin.com/in/maya-kroft/">LinkedIn</a>
+      <p>© 2023 MayaKroft</p>
+      {% endblock %}
+    </div>
+    
   </body>
 </html>
