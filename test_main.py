@@ -26,4 +26,9 @@ def test_cow(client):
     assert response.status_code == 200
     assert b"<title>Moo</title>" in response.data
 
+def test_sh(client):
+    response = client.get("/sh")
+    assert response.status_code == 200
+    assert b"<title>How to: sh</title>" in response.data
+
 

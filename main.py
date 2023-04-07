@@ -19,7 +19,7 @@ def cow():
     text= {'h1' : 'MOoooOo' , 'p' : 'MooOOoo'}
     return render_template('base.html', title = 'Moo', data = text )
 
-@app.route("/sh-script")
+@app.route("/sh")
 def sh():
-    text= {'instruction': 'Creare an .sh script','h2': 'creating the script', 'p': 'to create an sh script'}
-    return render_template('instructions.html', title = 'Moo', data = text )
+    text= {'h2': 'creating the script', 'p': 'to create an sh script'}
+    return render_template('instructions.html', title = 'sh', data = text )

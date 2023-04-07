@@ -14,7 +14,7 @@
       {% endblock %}
       <nav>
         <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('index') }}">Moo</a>
+        <a href="{{ url_for('cow') }}">Moo</a>
         <a href="{{ url_for('sh') }}">Sh Script</a>
       </nav>
     </header>
@@ -22,7 +22,7 @@
     <div class="middle">
       {% block content %}
       <h1> {{ data.h1 }} </h1>
-      <p> {{ data.text }} </p>
+      <p> {{ data.p }} </p>
       {% endblock %}
     </div>
     <hr>
