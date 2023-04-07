@@ -51,6 +51,13 @@ p {
   line-height: 2;
 }
 
+li{
+  font-family: 'Cabin', sans-serif;
+  color: #7D5A5A;
+
+  line-height: 2;
+}
+
 a {
   color: #7D5A5A;
   margin: 0 20px;
@@ -121,6 +128,11 @@ form {
   -moz-border-radius: 20px;
   border-radius: 20px;
   text-decoration: none;
+}
+
+.longlist {
+  margin: 0 auto 0 auto;
+  width: 80%;
 }
 
 .middle {

@@ -24,11 +24,14 @@
       {% block content %}
       <h1> {{ data.h1 }} </h1>
       <p> {{ data.p }} </p>
-      <ul>
-        {% for l in data.l %}
-        <li>{{ l }}</li>
-        {% endfor %}
-      </ul>
+      <div  class = 'longlist'>
+        <ol>
+          {% for l in data.l %}
+          <li>{{ l }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      
       {% endblock %}
     </div>
     <hr>
