@@ -9,7 +9,7 @@ app.static_folder = 'static'
 def index():
     text= {'h1' : 'CD Assignment site' ,
            'p': 'To be able to deliver this app onto digital ocean we followed these steps', 
-           'l' : {'Creating a droplet in Digital Ocean',
+           'l' : ['Creating a droplet in Digital Ocean',
                   'Creating a new user, no sudo priviledges',
                   'Installing and setting up git in the server',
                   'Creating an empty repository',
@@ -34,7 +34,7 @@ def index():
                   'Within the server, creating a .sh file, including git pull and systemctl restart myproject.service',
                   'Replace the script portion in the .yml file with the single line "bash myprojectscript.sh"',
                   'Continue to update Flask app and test file from local machine and pushing changes'}
-            }
+           ] 
     return render_template('base.html', title = 'Index', data = text )
     
 @app.route("/home")
