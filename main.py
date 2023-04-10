@@ -33,8 +33,8 @@ def index():
                   'Updating the .yml file to run pytest and only deploying if the tests are run succesfully',
                   'Within the server, creating a .sh file, including git pull and systemctl restart myproject.service',
                   'Replace the script portion in the .yml file with the single line "bash myprojectscript.sh"',
-                  'Continue to update Flask app and test file from local machine and pushing changes'}
-           ] 
+                  'Continue to update Flask app and test file from local machine and pushing changes'] 
+          } 
     return render_template('base.html', title = 'Index', data = text )
     
 @app.route("/home")
