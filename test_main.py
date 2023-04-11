@@ -21,10 +21,10 @@ def test_index(client):
     assert b"<title>Index</title>" in response.data
 
 
-def test_cow(client):
-    response = client.get("/cow")
+def test_links(client):
+    response = client.get("/links")
     assert response.status_code == 200
-    assert b"<title>Moo</title>" in response.data
+    assert b"<title>Useful links</title>" in response.data
 
 def test_sh(client):
     response = client.get("/sh")

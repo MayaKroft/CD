@@ -12,7 +12,7 @@ body {
 h1 {
   margin: 0 auto 0 auto;
   font-family: 'Pacifico', cursive;
-  color: #f53232;
+  color: #b64444;
   font-size: 3rem;
   line-height: 2;
   position: relative;
@@ -30,6 +30,7 @@ h2 {
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   color: #7f4848;
+  margin-top: 15px;
 }
 
 hr {
@@ -39,7 +40,7 @@ hr {
 
 hr {
   border-style: dotted none none none;
-  border-color: #ffe9d6;
+  border-color: #f1d9d9;
   border-width: 7px;
   width: 7%;
 }
@@ -86,13 +87,6 @@ form {
   padding-bottom: 20px;
 }
 
-.png {
-  width: 30%;
-  border-radius: 100%;
-  float: left;
-  margin-right: 30px;
-}
-
 .btn {
   background: #FAF2F2;
   background-image: -webkit-linear-gradient(top, #FAF2F2, #F1D1D1);
@@ -130,17 +124,27 @@ form {
   text-decoration: none;
 }
 
-.longlist {
-  margin: 0 auto 0 auto;
-  width: 80%;
-}
-
 .middle {
   background-color: #f3e1e1;
   margin: 0 auto 0 auto;
   padding-top: 50px;
   padding-bottom: 100px;
 }
+
+.longlist{
+  box-sizing: content-box;
+}
+
+.section {
+  display: inline-block;
+  border: solid #7f4848 5px;
+  border-radius: 15px;
+  padding: 35px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 #7f4848;
+}
+
+
 
 .top {
   background-color: #faf2f2;

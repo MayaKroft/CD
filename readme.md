@@ -3,12 +3,14 @@
 For this assignment the following was performed:
 
 The creation of a new user with limited permissions:
+   The first tutorial found, only focused on using root as the user, which is not a good idea to establish a continuous deployment pipeline with git, acordig to the github documentation, git commands do not need to be executed with sudo priviledges.
    The user was created as usual with adduser.
    No sudo permissions were granted.
    The sudoers file was modified to ensure the user was able to restart the server after an update and only use the powerfull systemctl commant for this purpose.
+   
 
 SSH pairing with github and the server:
-   An ssh key-pair was generated, after several unsuccesfull tries, I realized getting it to work required a git setup, including a git user to be created and for this user to have an email included in the GitHub account the git repository was going to connect to. 
+   An ssh key-pair was generated, after several unsuccesfull tries where the retrievalof the repository data would work from the command line in DigitalOcean but not the GitHub Actions script, I realized getting it to work required a git setup, including a git user to be created and for this user to have an email included in the GitHub account the git repository was going to connect to and that a new key needed to be generated. 
    The approppriate secrets were created and stored.
 Setting up the GitHub Action file:
    The deployment job was setup to run only if the pytest job had been compelted successfully.
