@@ -55,7 +55,7 @@ p {
 li{
   font-family: 'Cabin', sans-serif;
   color: #7D5A5A;
-
+  text-align: start;
   line-height: 2;
 }
 
@@ -137,11 +137,12 @@ form {
 
 .section {
   display: inline-block;
-  border: solid #7f4848 5px;
-  border-radius: 15px;
+  border: solid #7f4848 3px;
+  border-radius: 20px;
   padding: 35px;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 #7f4848;
+  margin: 2% 10px;
 }
 
 
