@@ -2,6 +2,8 @@
 
 body {
   margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: center;
   font-family: verdana, helvetica, sans-serif;
   font-size: 1.1em;
@@ -55,6 +57,7 @@ p {
 li{
   font-family: 'Cabin', sans-serif;
   color: #7D5A5A;
+  margin: 0 20px;
   text-align: start;
   line-height: 2;
 }

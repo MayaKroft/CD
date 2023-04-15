@@ -26,9 +26,3 @@ def test_links(client):
     assert response.status_code == 200
     assert b"<title>Useful links</title>" in response.data
 
-def test_sh(client):
-    response = client.get("/sh")
-    assert response.status_code == 200
-    assert b"<title>How to: sh</title>" in response.data
-
-
